@@ -1,6 +1,7 @@
 import unittest
-from .main import main
+from main import main
 from postcode import ApiError
+
 
 class TestCase(unittest.TestCase):
 
@@ -18,7 +19,6 @@ class TestCase(unittest.TestCase):
             main('?')
 
 
-
 if __name__ == "__main__":
-    unittest.main()
-#py -m unittest postal.test -bv
+    unittest.main(buffer=True, verbosity=2)
+# py -m unittest postal.test -bv
