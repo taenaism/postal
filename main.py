@@ -1,6 +1,5 @@
 from postcode import APIClient 
 import sys
-import json
 
 """
 pip install ./postal
